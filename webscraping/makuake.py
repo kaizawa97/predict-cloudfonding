@@ -11,8 +11,8 @@ import math #小数点の切り捨ての時に使用
 file = '../makecsv/makuaketagdata.csv' #書き込むためのファイルのパスを指定
 base_url = 'https://api.makuake.com/v2/projects?page={number}&per_page=15'
 
-pagenumber = 554
-for number in range(200):
+pagenumber = 700
+for number in range(60):
     print(pagenumber)
     url = base_url.format(number = pagenumber)
     request = requests.get(url,url)
@@ -124,6 +124,6 @@ for number in range(200):
             csv_writer = csv.writer(f) #２回目以降
             csv_writer.writerow(data)
         
-        timerandom = random.uniform(5,9) #秒数をランダムに設定しています
+        timerandom = random.uniform(5,11) #秒数をランダムに設定しています
         time.sleep(timerandom) #Sleeptimeをしています
     pagenumber += 1

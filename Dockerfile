@@ -9,7 +9,7 @@ RUN apt update \
 
 RUN pip install pandas \
 	&& pip install numpy \
-	&& pip install ipython \
+	&& pip install matplotlib \
 	&& pip install scikit-learn \
 	&& apt clean
 
