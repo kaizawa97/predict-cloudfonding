@@ -3,7 +3,7 @@ import os
 import csv
 from IPython.display import display
 
-makuake_path = '../makecsv/withouttagdata.csv'
+makuake_path = '../makecsv/makuaketagdata.csv'
 file = '../makecsv/onehotencorder.csv'
 
 data = pd.read_csv(makuake_path,header=0,index_col = False ,names = ['successorfail','moneygoal','image','projectdetail','riskchallengedetail','numberofpackage','avemoneypackage','minmoneypackage','maxmoneypackage','category'])
