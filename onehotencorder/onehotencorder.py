@@ -4,7 +4,7 @@ import csv
 from IPython.display import display
 
 makuake_path = '../makecsv/makuaketagdata.csv'
-file = '../makecsv/onehotencorder.csv'
+file = '../makecsv/onehotr.csv'
 
 data = pd.read_csv(makuake_path,header=0,index_col = False ,names = ['successorfail','moneygoal','image','projectdetail','riskchallengedetail','numberofpackage','avemoneypackage','minmoneypackage','maxmoneypackage','category'])
 data_dummies = pd.get_dummies(data)
